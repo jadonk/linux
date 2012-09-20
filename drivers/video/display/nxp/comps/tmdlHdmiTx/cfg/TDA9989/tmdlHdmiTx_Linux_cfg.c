@@ -149,12 +149,12 @@ const tmdlHdmiTxCfgVideoSignal444 videoPortMapping_YUV444[MAX_UNITS][6] = {
 /* tmdlHdmiTx_cfg.h to get the list of possible values                        */
 const tmdlHdmiTxCfgVideoSignal444 videoPortMapping_RGB444[MAX_UNITS][6] = {
     {
-        TMDL_HDMITX_VID444_VR_0_TO_3,   /* Signals connected to VPB[0..3] */
-        TMDL_HDMITX_VID444_VR_4_TO_7,   /* Signals connected to VPB[4..7] */
         TMDL_HDMITX_VID444_GY_0_TO_3,   /* Signals connected to VPA[0..3] */
         TMDL_HDMITX_VID444_GY_4_TO_7,   /* Signals connected to VPA[4..7] */
         TMDL_HDMITX_VID444_BU_0_TO_3,   /* Signals connected to VPC[0..3] */
-        TMDL_HDMITX_VID444_BU_4_TO_7    /* Signals connected to VPC[4..7] */
+        TMDL_HDMITX_VID444_BU_4_TO_7,   /* Signals connected to VPC[4..7] */
+        TMDL_HDMITX_VID444_VR_0_TO_3,   /* Signals connected to VPB[0..3] */
+        TMDL_HDMITX_VID444_VR_4_TO_7    /* Signals connected to VPB[4..7] */
     }
 };
 
