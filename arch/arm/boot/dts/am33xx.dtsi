@@ -291,11 +291,6 @@
 			usb1-phy = <&usb1_phy>;
 		};
 
-		rtc {
-			compatible = "ti,da830-rtc";
-			ti,hwmods = "rtc";
-		};
-
 		spi0: spi@48030000 {
 			compatible = "ti,omap4-mcspi";
 			ti,hwmods = "spi0";
@@ -503,38 +498,6 @@
 			interrupts = <75
 				      76>;
 			ti,hwmods = "rtc";
-		};
-
-		spi0: spi@48030000 {
-			compatible = "ti,omap4-mcspi";
-			#address-cells = <1>;
-			#size-cells = <0>;
-			reg = <0x48030000 0x400>;
-			interrupt = <65>;
-			ti,spi-num-cs = <2>;
-			ti,hwmods = "spi0";
-			dmas = <&edma 16
-				&edma 17
-				&edma 18
-				&edma 19>;
-			dma-names = "tx0", "rx0", "tx1", "rx1";
-			status = "disabled";
-		};
-
-		spi1: spi@481a0000 {
-			compatible = "ti,omap4-mcspi";
-			#address-cells = <1>;
-			#size-cells = <0>;
-			reg = <0x481a0000 0x400>;
-			interrupt = <125>;
-			ti,spi-num-cs = <2>;
-			ti,hwmods = "spi1";
-			dmas = <&edma 42
-				&edma 43
-				&edma 44
-				&edma 45>;
-			dma-names = "tx0", "rx0", "tx1", "rx1";
-			status = "disabled";
 		};
 
 		usb@47400000 {
