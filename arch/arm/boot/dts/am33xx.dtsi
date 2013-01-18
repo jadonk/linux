@@ -411,7 +411,7 @@
 			ti,hwmods = "epwmss0";
 			#address-cells = <1>;
 			#size-cells = <1>;
-			status = "disabled";
+			status = "okay";
 			ranges;
 
 			ecap0: ecap@48300100 {
@@ -419,7 +419,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48300100 0x80>;
 				ti,hwmods = "ecap0";
-				status = "disabled";
+				status = "okay";
 			};
 
 			ehrpwm0: ehrpwm@48300200 {
@@ -427,7 +427,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48300200 0x80>;
 				ti,hwmods = "ehrpwm0";
-				status = "disabled";
+				status = "okay";
 				tbclkgating;
 			};
 		};
@@ -441,7 +441,7 @@
 			ti,hwmods = "epwmss1";
 			#address-cells = <1>;
 			#size-cells = <1>;
-			status = "disabled";
+			status = "okay";
 			ranges;
 
 			ecap1: ecap@48302100 {
@@ -449,7 +449,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48302100 0x80>;
 				ti,hwmods = "ecap1";
-				status = "disabled";
+				status = "okay";
 			};
 
 			ehrpwm1: ehrpwm@48302200 {
@@ -457,7 +457,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48302200 0x80>;
 				ti,hwmods = "ehrpwm1";
-				status = "disabled";
+				status = "okay";
 				tbclkgating;
 			};
 		};
@@ -471,7 +471,7 @@
 			ti,hwmods = "epwmss2";
 			#address-cells = <1>;
 			#size-cells = <1>;
-			status = "disabled";
+			status = "okay";
 			ranges;
 
 			ecap2: ecap@48304100 {
@@ -479,7 +479,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48304100 0x80>;
 				ti,hwmods = "ecap2";
-				status = "disabled";
+				status = "okay";
 			};
 
 			ehrpwm2: ehrpwm@48304200 {
@@ -487,7 +487,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48304200 0x80>;
 				ti,hwmods = "ehrpwm2";
-				status = "disabled";
+				status = "okay";
 				tbclkgating;
 			};
 		};
