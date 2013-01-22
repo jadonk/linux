@@ -270,11 +270,11 @@
 			status = "disabled";
 		};
 
-		usb0_phy: phy0 {
+		usb0_phy: nop-phy@0 {
 			compatible = "nop-xceiv-usb";
 		};
 
-		usb1_phy: phy1 {
+		usb1_phy: nop-phy@1 {
 			compatible = "nop-xceiv-usb";
 		};
 
@@ -289,6 +289,7 @@
 			power = <250>;
 			usb0-phy = <&usb0_phy>;
 			usb1-phy = <&usb1_phy>;
+			status = "disabled";
 		};
 
 		spi0: spi@48030000 {

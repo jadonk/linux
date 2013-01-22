@@ -1991,6 +1991,8 @@ musb_init_controller(struct device *dev, int nIrq, void __iomem *ctrl)
 		musb_write_ulpi_buscontrol(musb->mregs, busctl);
 	}
 
+	/* TODO/FIXME: figure out if it is sane to have this configured 
+	 * even if we have ports that are host-only */
 	MUSB_DEV_MODE(musb);
 	musb->xceiv->otg->default_a = 0;
 	musb->xceiv->state = OTG_STATE_B_IDLE;
