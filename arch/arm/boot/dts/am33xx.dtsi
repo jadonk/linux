@@ -482,6 +482,7 @@
 			interrupt-parent = <&intc>;
 			interrupts = <16>;
 			ti,hwmods = "adc_tsc";
+			status = "disabled";
 		};
 
 		lcdc: lcdc@4830e000 {
@@ -498,7 +499,7 @@
 			ti,hwmods = "epwmss0";
 			#address-cells = <1>;
 			#size-cells = <1>;
-			//status = "disabled";
+			status = "disabled";
 			ranges = <0x48300100 0x48300100 0x80   /* ECAP */
 				  0x48300180 0x48300180 0x80   /* EQEP */
 				  0x48300200 0x48300200 0x80>; /* EHRPWM */
@@ -508,7 +509,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48300100 0x80>;
 				ti,hwmods = "ecap0";
-				//status = "disabled";
+				status = "disabled";
 			};
 
 			ehrpwm0: ehrpwm@48300200 {
@@ -516,7 +517,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48300200 0x80>;
 				ti,hwmods = "ehrpwm0";
-				//status = "disabled";
+				status = "disabled";
 			};
 		};
 
@@ -526,7 +527,7 @@
 			ti,hwmods = "epwmss1";
 			#address-cells = <1>;
 			#size-cells = <1>;
-			//status = "disabled";
+			status = "disabled";
 			ranges = <0x48302100 0x48302100 0x80   /* ECAP */
 				  0x48302180 0x48302180 0x80   /* EQEP */
 				  0x48302200 0x48302200 0x80>; /* EHRPWM */
@@ -536,7 +537,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48302100 0x80>;
 				ti,hwmods = "ecap1";
-				//status = "disabled";
+				status = "disabled";
 			};
 
 			ehrpwm1: ehrpwm@48302200 {
@@ -544,7 +545,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48302200 0x80>;
 				ti,hwmods = "ehrpwm1";
-				//status = "disabled";
+				status = "disabled";
 			};
 		};
 
@@ -554,7 +555,7 @@
 			ti,hwmods = "epwmss2";
 			#address-cells = <1>;
 			#size-cells = <1>;
-			//status = "disabled";
+			status = "disabled";
 			ranges = <0x48304100 0x48304100 0x80   /* ECAP */
 				  0x48304180 0x48304180 0x80   /* EQEP */
 				  0x48304200 0x48304200 0x80>; /* EHRPWM */
@@ -564,7 +565,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48304100 0x80>;
 				ti,hwmods = "ecap2";
-				//status = "disabled";
+				status = "disabled";
 			};
 
 			ehrpwm2: ehrpwm@48304200 {
@@ -572,7 +573,7 @@
 				#pwm-cells = <3>;
 				reg = <0x48304200 0x80>;
 				ti,hwmods = "ehrpwm2";
-				//status = "disabled";
+				status = "disabled";
 			};
 		};
 
