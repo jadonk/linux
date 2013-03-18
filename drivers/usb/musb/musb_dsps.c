@@ -1061,7 +1061,9 @@ static int dsps_musb_init(struct musb *musb)
 	musb->mregs += wrp->musb_core_offset;
 
 	/* NOP driver needs change if supporting dual instance */
-	usb_nop_xceiv_register();
+	if(!pdev->id) {
+		usb_nop_xceiv_register();
+	}
 	musb->xceiv = usb_get_phy(USB_PHY_TYPE_USB2);
 	if (IS_ERR_OR_NULL(musb->xceiv))
 		return -EPROBE_DEFER;
@@ -1095,7 +1097,9 @@ static int dsps_musb_init(struct musb *musb)
 	return 0;
 err0:
 	usb_put_phy(musb->xceiv);
-	usb_nop_xceiv_unregister();
+	if(!pdev->id) {
+		usb_nop_xceiv_unregister();
+	}
 	return status;
 }
 
@@ -1112,7 +1116,9 @@ static int dsps_musb_exit(struct musb *musb)
 
 	/* NOP driver needs change if supporting dual instance */
 	usb_put_phy(musb->xceiv);
-	usb_nop_xceiv_unregister();
+	if(!pdev->id) {
+		usb_nop_xceiv_unregister();
+	}
 
 	return 0;
 }
