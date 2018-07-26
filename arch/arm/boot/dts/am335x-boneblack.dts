@@ -10,6 +10,7 @@
 #include "am33xx.dtsi"
 #include "am335x-bone-common.dtsi"
 #include "am335x-boneblack-common.dtsi"
+#include "am335x-bone-common-univ.dtsi"
 /* #include "am335x-bone-jtag.dtsi" */
 
 / {
@@ -30,4 +31,31 @@
 	oppnitro-1000000000 {
 		opp-supported-hw = <0x06 0x0100>;
 	};
+};
+
+/*******************************************************************************
+* PWMSS
+*******************************************************************************/
+&epwmss0 {
+	status = "okay";
+};
+
+&epwmss1 {
+	status = "okay";
+};
+
+&epwmss2 {
+	status = "okay";
+};
+
+&ehrpwm0 {
+	status = "okay";
+};
+
+&ehrpwm1 {
+	status = "okay";
+};
+
+&ehrpwm2 {
+	status = "okay";
 };
